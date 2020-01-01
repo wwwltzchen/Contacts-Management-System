@@ -1,9 +1,6 @@
 #include "main.h"
 
-void print_menu()
-{
-
-}
+extern void print_menu();
 
 int main()
 {

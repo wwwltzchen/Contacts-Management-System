@@ -1,4 +1,8 @@
+#ifndef __STD_LIB_USED
+#define __STD_LIB_USED
 #include <iostream>
+#endif
+
 #include "contact_menu.h"
 #include "contact_exit.h"
 #include "add_contacts.h"
