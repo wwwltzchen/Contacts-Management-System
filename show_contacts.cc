@@ -9,13 +9,11 @@ void show_a_contact(Contact * p)
 int show_all_contacts()
 {
     struct Contact * conp = con;
-    std::cout << "con addr: " << con << std::endl;
-    std::cout << "con name: " << con -> name << std::endl;
     for (int i = 0; i < CONTACT_LENTH; i++)
     {
         if (conp -> name.empty())
         {
-            std::cout << "The " << i << " element is empty." << std::endl;
+ //           std::cout << "The " << i << " element is empty." << std::endl;
             break;
         }
         show_a_contact(conp);

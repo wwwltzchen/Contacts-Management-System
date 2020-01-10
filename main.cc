@@ -9,6 +9,9 @@ int execute_contact_system(int option)
         case ADD_A_CONTACT :
             ret_code = add_contact();
             break;
+        case DELETE_A_CONTACT : 
+            ret_code = delete_contacts();
+            break;
         case SHOW_ALL_CONTACTS :
             ret_code = show_all_contacts();
             break;
@@ -34,6 +37,7 @@ int accept_input()
 int main()
 {
     int ret_code;
+    //contact_init();
     print_menu();
     while(input_number = accept_input())
     {
@@ -53,5 +57,7 @@ int main()
     {
         std::cout << "An error has occurred and system will quit." << std::endl;
     }
+    //free(con);
+    delete [] con;
     return ret_code;
 }

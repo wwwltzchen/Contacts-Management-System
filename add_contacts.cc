@@ -12,7 +12,6 @@ int append_write(Contact con_input)
             conp -> age = con_input.age;
             conp -> gender = con_input.gender;
             conp -> phone_number = con_input.phone_number;
-            std::cout << conp-> name << std::endl;
             break;
         }
         conp++;
@@ -34,15 +33,13 @@ int add_contact()
     std::cout << "Please input contact age:" << std::endl;
     std::cin >> i;
     cont.age = i;
-    std::cout << "Please input contact gender: 0:male, 1:female" << std::endl;
+    std::cout << "Please input contact gender: " << MALE_INDEX << ":male; " << FEMALE_INDEX << ":female" << std::endl;
     std::cin >> i;
     cont.gender = i;
     std::cout << "Please input contact phone number:" << std::endl;
     std::cin >> str;
     cont.phone_number = str;
-    std::cout << "name: " << cont.name << " age: " << cont.age << " gender: " << cont.gender << " phone number: " << cont.phone_number << std::endl;
+ //   std::cout << "name: " << cont.name << " age: " << cont.age << " gender: " << cont.gender << " phone number: " << cont.phone_number << std::endl;
     i = append_write(cont);
-    std::cout << "con name: " << con -> name << std::endl;
-    std::cout << "con addr: " << con << std::endl;
     return i;
 }
